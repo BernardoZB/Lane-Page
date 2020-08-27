@@ -28,6 +28,9 @@
 		href='http://fonts.googleapis.com/css?family=Teko:100,200,300,400,400italic,500,700,700italic,900'>
 
 	<!-- CSS -->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
+
 	<link rel='stylesheet' href='css/global.css'>
 	<link rel='stylesheet' href='content/data/css/structure.css'>
 	<link rel='stylesheet' href='content/data/css/data.css'>
@@ -242,23 +245,50 @@
 
 												<h2 class="title-sign-up">COMECE AGORA! </h2>
 												<div id="contactWrapper">
-													<form id="contactform " class="space-title-content">
-														<div class="column five-sixth">
-															<i class="icon-email icon-sign-up"></i>
-															<input class="input-sign-up" placeholder="SEU E-MAIL" type="email" name="email" id="email"
-																size="40" aria-required="true" aria-invalid="false" />
-														</div>
-
-														<div class="column one-sixth ">
-															<a href="#popup-sign-up" class="btn-sign-up button " type="button"
-																id="submit"><span>INSCREVA-SE
-																</span>
-															</a>
-														</div>
-														<div class="column one alinhamento-sign-up">
-															<h5><i class=" icon-lock "></i>Todos os seus dados estão seguros</h5>
-														</div>
-													</form>
+													<div id="mauticform_wrapper_cursorobosinvestimentosleads">
+														<form class="space-title-content " method="post"
+															action="https://mail.deltatrader.com.br/form/submit?formId=35"
+															id="mauticform_cursorobosinvestimentosleads"
+															data-mautic-form="cursorobosinvestimentosleads">
+															<div class="mauticform-error" id="mauticform_cursorobosinvestimentosleads_error"></div>
+															<div class="mauticform-message" id="mauticform_cursorobosinvestimentosleads_message">
+															</div>
+															<div class="mauticform-innerform">
+																<div class="column five-sixth">
+																	<div data-mautic-form-page="1">
+																		<div>
+																			<i class="icon-email icon-sign-up"></i>
+																			<input class="input-sign-up"
+																				id="mauticform_input_cursorobosinvestimentosleads_email"
+																				name="mauticform[email]" value="" placeholder="SEU E-MAIL" type="email"
+																				name="email" id="email" size="40" />
+																			<span class="mauticform-errormsg" style="display: none;">Isso é
+																				obrigatório.</span>
+																		</div>
+																	</div>
+																</div>
+																<div
+																	class="column one-sixth mauticform-row mauticform-button-wrapper mauticform-field-2 "
+																	id="mauticform_cursorobosinvestimentosleads_submit">
+																	<button class="btn-sign-up button "
+																		id="mauticform_input_cursorobosinvestimentosleads_submit" name="mauticform[submit]"
+																		value="" value="1" type="submit"><span>INSCREVA-SE
+																		</span>
+																	</button>
+																</div>
+																<div class=" column one alinhamento-sign-up">
+																	<h5><i class=" icon-lock "></i>Todos os seus dados estão seguros</h5>
+																</div>
+																<input type="hidden" name="mauticform[formId]"
+																	id="mauticform_cursorobosinvestimentosleads_id" value="35" />
+																<input type="hidden" name="mauticform[return]"
+																	id="mauticform_cursorobosinvestimentosleads_return" value="" />
+																<input type="hidden" name="mauticform[formName]"
+																	id="mauticform_cursorobosinvestimentosleads_name"
+																	value="cursorobosinvestimentosleads" />
+															</div>
+														</form>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -272,315 +302,350 @@
 										<h2 class="title-contact">FALE CONOSCO</h2>
 										<div id="contactWrapper">
 											<form id="contactform" class="space-title-content">
+												<div class="mauticform-error" id="mauticform_cursorobosinvestimentosleads_error"></div>
+												<div class="mauticform-message" id="mauticform_cursorobosinvestimentosleads_message"></div>
+												<div class="mauticform-innerform">
+													<div class="column one">
+														<i class="icon-email icon-contact"></i>
+														<input class="input-contact" placeholder="SEU E-MAIL" type="email" name="email" id="email"
+															size="40" aria-required="true" aria-invalid="false" />
+													</div>
 
+												</div>
 												<div class="column one">
-													<i class="icon-email icon-contact"></i>
-													<input class="input-contact" placeholder="SEU E-MAIL" type="email" name="email" id="email"
-														size="40" aria-required="true" aria-invalid="false" />
+													<i class="icon-chat icon-contact"></i>
+
+													<textarea class="input-contact-mensage" placeholder="MENSAGEM" name="body" id="body"
+														style="width:100%;" size="40" aria-required="true" aria-invalid="false"></textarea>
+													<div class="column five-sixth">
+														<h5 class="alinhamento-contact"><i class="icon-lock "></i>Todos os seus dados estão
+															seguros</h5>
+													</div>
+													<div class="column one-sixth">
+														<button class="btn-contact button popup-link button button_js" type="submit"><span>ENVIAR
+															</span>
+														</button>
+													</div>
 												</div>
 
+											</form>
 										</div>
-										<div class="column one">
-											<i class="icon-chat icon-contact"></i>
-
-											<textarea class="input-contact-mensage" placeholder="MENSAGEM" name="body" id="body"
-												style="width:100%;" size="40" aria-required="true" aria-invalid="false"></textarea>
-											<div class="column five-sixth">
-												<h5 class="alinhamento-contact"><i class="icon-lock "></i>Todos os seus dados estão
-													seguros</h5>
-											</div>
-											<div class="column one-sixth">
-												<a href="#popup1" class="btn-contact button" type="button" id="submit"><span>ENVIAR
-													</span>
-												</a>
-											</div>
-										</div>
-
-										</form>
 									</div>
+									<!-- Fim de Contato -->
 								</div>
-								<!-- Fim de Contato -->
-							</div>
-							<div class="section mcb-section mcb-section-g8iqvqlwb equal-height-wrap" style="padding-top:110px">
-								<div class="section_wrapper mcb-section-inner">
-									<div class="wrap mcb-wrap mcb-wrap-34jzgsfpn one-second valign-middle clearfix" style="padding:0 1%">
-										<div class="mcb-wrap-inner">
-											<div class="column mcb-column mcb-item-x9clk3qj8 one column_column">
-												<div class="column_attr clearfix">
-													<div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+								<div class="section mcb-section mcb-section-g8iqvqlwb equal-height-wrap" style="padding-top:110px">
+									<div class="section_wrapper mcb-section-inner">
+										<div class="wrap mcb-wrap mcb-wrap-34jzgsfpn one-second valign-middle clearfix"
+											style="padding:0 1%">
+											<div class="mcb-wrap-inner">
+												<div class="column mcb-column mcb-item-x9clk3qj8 one column_column">
+													<div class="column_attr clearfix">
+														<div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+															<div class="image_wrapper"><img class="scale-with-grid"
+																	src="content/data/images/data-icon1.png">
+															</div>
+														</div>
+														<hr class="no_line" style="margin:0 auto 5px">
+														<h6>INTRODUCTION</h6>
+														<h2>QUICK INTRODUCTION</h2>
+														<h4 style="color: #6eeaff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+															mauris dolor, gravida a varius blandit, auctor eget purus cursus.</h4>
+													</div>
+												</div>
+												<div class="column mcb-column mcb-item-hamgpqyvi one column_column column-margin-0px">
+													<div class="column_attr clearfix"
+														style="background-image:url('content/data/images/data-icon2.png');background-repeat:no-repeat;background-position:left top;padding:2px 0 0 40px;">
+														<p>
+															Curabitur sed iaculis dolor, non congue ligula
+														</p>
+													</div>
+												</div>
+												<div class="column mcb-column mcb-item-6cqrnvh3w one column_column column-margin-0px">
+													<div class="column_attr clearfix"
+														style="background-image:url('content/data/images/data-icon2.png');background-repeat:no-repeat;background-position:left top;padding:2px 0 0 40px;">
+														<p>
+															Curabitur et ligula molestie ultricies porta
+														</p>
+													</div>
+												</div>
+												<div class="column mcb-column mcb-item-azdiv5vog one column_column">
+													<div class="column_attr clearfix"
+														style="background-image:url('content/data/images/data-icon2.png');background-repeat:no-repeat;background-position:left top;padding:2px 0 0 40px;">
+														<p>
+															Aliquam erat ac ipsum aliquam purus
+														</p>
+													</div>
+												</div>
+												<div class="column mcb-column mcb-item-mddfdkwsz one column_button">
+													<a class="button button_size_2 button_js" href="content/data/about.html"><span
+															class="button_label">READ MORE</span></a>
+												</div>
+											</div>
+										</div>
+										<div class="wrap mcb-wrap mcb-wrap-wb7wu6rnw one-second valign-middle clearfix"
+											style="padding:0 1%">
+											<div class="mcb-wrap-inner">
+												<div class="column mcb-column mcb-item-yewgb22pn one column_image">
+													<div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
 														<div class="image_wrapper"><img class="scale-with-grid"
-																src="content/data/images/data-icon1.png">
+																src="content/data/images/data-home-pic2.png">
 														</div>
 													</div>
-													<hr class="no_line" style="margin:0 auto 5px">
-													<h6>INTRODUCTION</h6>
-													<h2>QUICK INTRODUCTION</h2>
-													<h4 style="color: #6eeaff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-														mauris dolor, gravida a varius blandit, auctor eget purus cursus.</h4>
-												</div>
-											</div>
-											<div class="column mcb-column mcb-item-hamgpqyvi one column_column column-margin-0px">
-												<div class="column_attr clearfix"
-													style="background-image:url('content/data/images/data-icon2.png');background-repeat:no-repeat;background-position:left top;padding:2px 0 0 40px;">
-													<p>
-														Curabitur sed iaculis dolor, non congue ligula
-													</p>
-												</div>
-											</div>
-											<div class="column mcb-column mcb-item-6cqrnvh3w one column_column column-margin-0px">
-												<div class="column_attr clearfix"
-													style="background-image:url('content/data/images/data-icon2.png');background-repeat:no-repeat;background-position:left top;padding:2px 0 0 40px;">
-													<p>
-														Curabitur et ligula molestie ultricies porta
-													</p>
-												</div>
-											</div>
-											<div class="column mcb-column mcb-item-azdiv5vog one column_column">
-												<div class="column_attr clearfix"
-													style="background-image:url('content/data/images/data-icon2.png');background-repeat:no-repeat;background-position:left top;padding:2px 0 0 40px;">
-													<p>
-														Aliquam erat ac ipsum aliquam purus
-													</p>
-												</div>
-											</div>
-											<div class="column mcb-column mcb-item-mddfdkwsz one column_button">
-												<a class="button button_size_2 button_js" href="content/data/about.html"><span
-														class="button_label">READ MORE</span></a>
-											</div>
-										</div>
-									</div>
-									<div class="wrap mcb-wrap mcb-wrap-wb7wu6rnw one-second valign-middle clearfix" style="padding:0 1%">
-										<div class="mcb-wrap-inner">
-											<div class="column mcb-column mcb-item-yewgb22pn one column_image">
-												<div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
-													<div class="image_wrapper"><img class="scale-with-grid"
-															src="content/data/images/data-home-pic2.png">
-													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+								<div class="section mcb-section mcb-section-wg691o6i3 equal-height-wrap" style="padding-bottom:70px">
+									<div class="section_wrapper mcb-section-inner">
+										<div class="wrap mcb-wrap mcb-wrap-0lhpz2c9j one-second valign-middle clearfix"
+											style="padding:0 1%">
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="section mcb-section mcb-section-wg691o6i3 equal-height-wrap" style="padding-bottom:70px">
+							<!-- //imagem da transição -->
+							<div class="section mcb-section mcb-section-pl1a7c4cg full-width">
 								<div class="section_wrapper mcb-section-inner">
-									<div class="wrap mcb-wrap mcb-wrap-0lhpz2c9j one-second valign-middle clearfix" style="padding:0 1%">
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //imagem da transição -->
-						<div class="section mcb-section mcb-section-pl1a7c4cg full-width">
-							<div class="section_wrapper mcb-section-inner">
-								<div class="wrap mcb-wrap mcb-wrap-uz2r2npmu one valign-top clearfix" style>
-									<div class="mcb-wrap-inner">
-										<div class="column mcb-column mcb-item-i5m78knas one column_fancy_divider">
-											<div class="fancy-divider">
-												<svg preserveAspectRatio="none" viewBox="0 0 100 100" height="100" width="100%" version="1.1"
-													xmlns="https://www.w3.org/2000/svg">
-													<path d="M0 100 L50 2 L100 100 Z" style="fill: #fff; stroke: #fff;" />
-												</svg>
+									<div class="wrap mcb-wrap mcb-wrap-uz2r2npmu one valign-top clearfix" style>
+										<div class="mcb-wrap-inner">
+											<div class="column mcb-column mcb-item-i5m78knas one column_fancy_divider">
+												<div class="fancy-divider">
+													<svg preserveAspectRatio="none" viewBox="0 0 100 100" height="100" width="100%" version="1.1"
+														xmlns="https://www.w3.org/2000/svg">
+														<path d="M0 100 L50 2 L100 100 Z" style="fill: #fff; stroke: #fff;" />
+													</svg>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="section mcb-section mcb-section-2vqahjiyg"
-							style="padding-top:70px;padding-bottom:70px;background-color:#ffffff">
-							<div class="section_wrapper mcb-section-inner">
-							</div>
-							<div class="wrap mcb-wrap mcb-wrap-j698firkv one-fourth valign-top clearfix" style="padding:0 1%">
-								<div class="mcb-wrap-inner">
-									<div class="column mcb-column mcb-item-b4uvnp9ur one column_column">
-										<div class="column_attr clearfix align_center">
+							<!-- fim -->
+							<div class="section mcb-section mcb-section-2vqahjiyg"
+								style="padding-top:70px;padding-bottom:70px;background-color:#ffffff">
+								<div class="section_wrapper mcb-section-inner">
+								</div>
+								<div class="wrap mcb-wrap mcb-wrap-j698firkv one-fourth valign-top clearfix" style="padding:0 1%">
+									<div class="mcb-wrap-inner">
+										<div class="column mcb-column mcb-item-b4uvnp9ur one column_column">
+											<div class="column_attr clearfix align_center">
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="wrap mcb-wrap mcb-wrap-qp8fg7olf one-fourth valign-top clearfix" style="padding:0 1%">
+									<div class="mcb-wrap-inner">
+										<div class="column mcb-column mcb-item-7qi7hzxri one column_column">
 
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="wrap mcb-wrap mcb-wrap-qp8fg7olf one-fourth valign-top clearfix" style="padding:0 1%">
-								<div class="mcb-wrap-inner">
-									<div class="column mcb-column mcb-item-7qi7hzxri one column_column">
-
+						</div>
+					</div>
+				</div>
+				<div class="section mcb-section mcb-section-vf7be9gz7"
+					style="padding-top:30px;padding-bottom:70px;background-color:#ffffff">
+					<div class="section_wrapper mcb-section-inner">
+					</div>
+				</div>
+				<div class="section mcb-section mcb-section-qk1podr6h full-width">
+					<div class="section_wrapper mcb-section-inner">
+						<div class="wrap mcb-wrap mcb-wrap-rov7zrf41 one valign-top clearfix" style>
+							<div class="mcb-wrap-inner">
+								<div class="column mcb-column mcb-item-2denarsdr one column_fancy_divider">
+									<div class="fancy-divider">
+										<svg preserveAspectRatio="none" viewBox="0 0 100 100" height="100" width="100%" version="1.1"
+											xmlns="https://www.w3.org/2000/svg" style="background: #fff;">
+											<path d="M0 100 L50 2 L100 100 Z" style="fill: #0d0f39; stroke: #0d0f39;" />
+										</svg>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="section mcb-section mcb-section-vf7be9gz7"
-				style="padding-top:30px;padding-bottom:70px;background-color:#ffffff">
-				<div class="section_wrapper mcb-section-inner">
-				</div>
-			</div>
-			<div class="section mcb-section mcb-section-qk1podr6h full-width">
-				<div class="section_wrapper mcb-section-inner">
-					<div class="wrap mcb-wrap mcb-wrap-rov7zrf41 one valign-top clearfix" style>
-						<div class="mcb-wrap-inner">
-							<div class="column mcb-column mcb-item-2denarsdr one column_fancy_divider">
-								<div class="fancy-divider">
-									<svg preserveAspectRatio="none" viewBox="0 0 100 100" height="100" width="100%" version="1.1"
-										xmlns="https://www.w3.org/2000/svg" style="background: #fff;">
-										<path d="M0 100 L50 2 L100 100 Z" style="fill: #0d0f39; stroke: #0d0f39;" />
-									</svg>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<footer id="Footer" class="clearfix">
-				<div class="widgets_wrapper">
-					<div class="container">
-						<div class="column one-third">
-							<aside class="widget_text widget widget_custom_html">
-								<div class="textwidget custom-html-widget">
-									<div style="text-align: center;">
-										<h6>OUR MANAGER</h6>
-										<p>
-											Paul Shepherd
-											<br>
-											+61 (0) 383 766 284
-											<br>
-											<a href="#">noreply@envato.com</a>
-										</p>
-									</div>
-								</div>
-							</aside>
-						</div>
-						<div class="column one-third">
-							<aside class="widget_text widget widget_custom_html">
-								<div class="textwidget custom-html-widget">
-									<div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
-										<div class="image_wrapper"><img class="scale-with-grid"
-												src="content/data/images/data-footer-logo.png">
+				<footer id=" Footer" class="clearfix">
+					<div class="widgets_wrapper">
+						<div class="container">
+							<div class="column one-third">
+								<aside class="widget_text widget widget_custom_html">
+									<div class="textwidget custom-html-widget">
+										<div style="text-align: center;">
+											<h6>OUR MANAGER</h6>
+											<p>
+												Paul Shepherd
+												<br>
+												+61 (0) 383 766 284
+												<br>
+												<a href="#">noreply@envato.com</a>
+											</p>
 										</div>
 									</div>
-								</div>
-							</aside>
-						</div>
-						<div class="column one-third">
-							<aside class="widget_text widget widget_custom_html">
-								<div class="textwidget custom-html-widget">
-									<div style="text-align: center;">
-										<h6>OUR ADDRESS</h6>
-										<p>
-											Level 13, 2 Elizabeth St,
-											<br>
-											Melbourne, Victoria 3000,
-											<br>
-											Australia
-										</p>
+								</aside>
+							</div>
+							<div class="column one-third">
+								<aside class="widget_text widget widget_custom_html">
+									<div class="textwidget custom-html-widget">
+										<div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+											<div class="image_wrapper"><img class="scale-with-grid"
+													src="content/data/images/data-footer-logo.png">
+											</div>
+										</div>
 									</div>
-								</div>
-							</aside>
-						</div>
-					</div>
-				</div>
-				<div class="footer_copy">
-					<div class="container">
-						<div class="column one">
-							<div class="copyright">
-								&copy; 2020 BeData - BeTheme. Muffin group - HTML by <a target="_blank" rel="nofollow"
-									href="https://1.envato.market/9ZxXY">BeantownThemes</a>
+								</aside>
+							</div>
+							<div class="column one-third">
+								<aside class="widget_text widget widget_custom_html">
+									<div class="textwidget custom-html-widget">
+										<div style="text-align: center;">
+											<h6>OUR ADDRESS</h6>
+											<p>
+												Level 13, 2 Elizabeth St,
+												<br>
+												Melbourne, Victoria 3000,
+												<br>
+												Australia
+											</p>
+										</div>
+									</div>
+								</aside>
 							</div>
 						</div>
 					</div>
+					<div class="footer_copy">
+						<div class="container">
+							<div class="column one">
+								<div class="copyright">
+									&copy; 2020 BeData - BeTheme. Muffin group - HTML by <a target="_blank" rel="nofollow"
+										href="https://1.envato.market/9ZxXY">BeantownThemes</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+			<div id="Side_slide" class="right dark" data-width="250">
+				<div class="close-wrapper">
+					<a href="#" class="close"><i class="icon-cancel-fine"></i></a>
 				</div>
-			</footer>
-		</div>
-		<div id="Side_slide" class="right dark" data-width="250">
-			<div class="close-wrapper">
-				<a href="#" class="close"><i class="icon-cancel-fine"></i></a>
+				<div class="extras">
+					<a href="https://1.envato.market/9ZxXY" class="action_button" target="_blank">BUY NOW <i
+							class="icon-right-open"></i></a>
+					<div class="extras-wrapper"></div>
+				</div>
+				<div class="menu_wrapper"></div>
 			</div>
-			<div class="extras">
-				<a href="https://1.envato.market/9ZxXY" class="action_button" target="_blank">BUY NOW <i
-						class="icon-right-open"></i></a>
-				<div class="extras-wrapper"></div>
-			</div>
-			<div class="menu_wrapper"></div>
-		</div>
-		<div id="body_overlay"></div>
+			<div id="body_overlay"></div>
 
 
-		<!-- JS -->
-		<script src="js/jquery-2.1.4.min.js"></script>
+			<!-- JS -->
+			<script src="js/jquery-2.1.4.min.js"></script>
 
-		<script src="js/mfn.menu.js"></script>
-		<script src="js/jquery.plugins.js"></script>
-		<script src="js/jquery.jplayer.min.js"></script>
-		<script src="js/animations/animations.js"></script>
-		<script src="js/translate3d.js"></script>
-		<script src="js/scripts.js"></script>
+			<script src="js/mfn.menu.js"></script>
+			<script src="js/jquery.plugins.js"></script>
+			<script src="js/jquery.jplayer.min.js"></script>
+			<script src="js/animations/animations.js"></script>
+			<script src="js/translate3d.js"></script>
+			<script src="js/scripts.js"></script>
 
-		<script src="plugins/rs-plugin-6.custom/js/revolution.tools.min.js"></script>
-		<script src="plugins/rs-plugin-6.custom/js/rs6.min.js"></script>
+			<script src="plugins/rs-plugin-6.custom/js/revolution.tools.min.js"></script>
+			<script src="plugins/rs-plugin-6.custom/js/rs6.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>;
+			<script src="content/data/Js/cookie.js"></script>
+			<script src="content/data/Js/cadastrar.js"></script>
 
+			<script>
+				var revapi1, tpj;
+				jQuery(function () {
+					tpj = jQuery;
+					revapi1 = tpj("#rev_slider_1_1")
+					if (revapi1 == undefined || revapi1.revolution == undefined) {
+						revslider_showDoubleJqueryError("rev_slider_1_1");
+					} else {
+						revapi1.revolution({
+							sliderType: "hero",
+							sliderLayout: "fullwidth",
+							visibilityLevels: "1240,1240,778,778",
+							gridwidth: "1240,1240,778,778",
+							gridheight: "1000,1000,960,960",
+							spinner: "spinner8",
+							perspective: 600,
+							perspectiveType: "global",
+							editorheight: "1000,768,960,720",
+							responsiveLevels: "1240,1240,778,778",
+							disableProgressBar: "on",
+							navigation: {
+								onHoverStop: false
+							},
+							fallbacks: {
+								allowHTML5AutoPlayOnAndroid: true
+							},
+						});
+					}
+				})
+			</script>
 
-		<script>
-			var revapi1, tpj;
-			jQuery(function () {
-				tpj = jQuery;
-				revapi1 = tpj("#rev_slider_1_1")
-				if (revapi1 == undefined || revapi1.revolution == undefined) {
-					revslider_showDoubleJqueryError("rev_slider_1_1");
-				} else {
-					revapi1.revolution({
-						sliderType: "hero",
-						sliderLayout: "fullwidth",
-						visibilityLevels: "1240,1240,778,778",
-						gridwidth: "1240,1240,778,778",
-						gridheight: "1000,1000,960,960",
-						spinner: "spinner8",
-						perspective: 600,
-						perspectiveType: "global",
-						editorheight: "1000,768,960,720",
-						responsiveLevels: "1240,1240,778,778",
-						disableProgressBar: "on",
-						navigation: {
-							onHoverStop: false
-						},
-						fallbacks: {
-							allowHTML5AutoPlayOnAndroid: true
-						},
-					});
+			<style>
+				html {
+					scroll-behavior: smooth
 				}
-			})
-		</script>
-		git remote add origin https://github.com/BernardoZB/Lane-page
 
-		<style>
-			html {
-				scroll-behavior: smooth
-			}
+				.mauticform-errormsg {
+					display: block;
+					color: red;
+					margin-top: 2px;
+				}
 
-			/* COLOCAR TODAS AS DIV COM UM TAMANHO DE 768PX */
-			.title-accordion {
-				margin-top: 5%;
-				margin-left: 20%;
-			}
+				.cc-btn {
+					background-color: transparent !important;
+					color: white !important;
+					border: 2px solid white !important;
+				}
 
-			.section-accordion {
-				color: #fff !important;
-				border: none !important;
-				font-size: 23px !important;
-				font-family: teko !important;
-			}
+				.cc-btn:hover {
+					text-decoration: none;
+				}
 
-			.answer-accordion {
-				color: white;
-				font-size: 20px;
-				font-family: "Barlow Condensed";
-				background-color: transparent !important;
-			}
+				.cc-color-override--1588655054.cc-window,
+				.cc-link {
+					color: #fff;
+					background-image: url(content/data/images/data-bg.png);
+					background-repeat: no-repeat;
+					background-position: center;
+					background-attachment: fixed;
+					background-size: cover;
+					font-size: 20px;
+					font-family: "Barlow Condensed";
+				}
 
-			.icon-accordion {
-				color: #fff !important;
-			}
+				/* COLOCAR TODAS AS DIV COM UM TAMANHO DE 768PX */
+				.title-accordion {
+					margin-top: 5%;
+					margin-left: 20%;
+				}
 
-			/*.fundo-teste {
+				.section-accordion {
+					color: #fff !important;
+					border: none !important;
+					font-size: 23px !important;
+					font-family: teko !important;
+				}
+
+				.answer-accordion {
+					color: white;
+					font-size: 20px;
+					font-family: "Barlow Condensed";
+					background-color: transparent !important;
+				}
+
+				.icon-accordion {
+					color: #fff !important;
+				}
+
+				/*.fundo-teste {
 				background-image: url(content/data/images/bg-sign-up.png);
 				background-repeat: no-repeat;
 				background-position: left !important;
@@ -588,109 +653,119 @@
 
 			}*/
 
-			.section_wrapper {
-				min-height: 768px;
-			}
+				.section_wrapper {
+					min-height: 768px;
+				}
 
-			.alinhamento-sign-up {
-				margin-left: -5%;
-				text-align: center;
-			}
+				.alinhamento-sign-up {
+					margin-left: -5%;
+					text-align: center;
+				}
 
-			.alinhamento-contact {
-				text-align: center;
-				margin-left: 20%;
-			}
+				.alinhamento-contact {
+					text-align: center;
+					margin-left: 20%;
+				}
 
-			.space-title-content {
-				margin-top: 15%;
-			}
+				.space-title-content {
+					margin-top: 15%;
+				}
 
-			.input-sign-up {
-				height: 65px;
-				border-radius: 30px !important;
-				font-size: 15px !important;
-				font-family: Barrlow Condesed;
-			}
+				.input-sign-up {
+					height: 65px;
+					border-radius: 30px !important;
+					font-size: 25px !important;
+					font-family: Barrlow Condesed;
+					padding-left: 8% !important;
+					color: #0d0f39 !important;
+				}
 
-			.icon-sign-up {
-				position: absolute;
-				margin-top: 1.7%;
-				margin-left: 1%;
-				color: #0d0f39;
-			}
+				.icon-sign-up {
+					position: absolute;
+					font-size: 30px;
+					margin-top: 1.7%;
+					margin-left: 1%;
+					color: #0d0f39;
+				}
 
-			.btn-sign-up {
-				width: 100px !important;
-				padding-left: 10% !important;
-			}
+				.btn-sign-up {
+					width: 140px !important;
+					height: 60px;
+					padding-left: 10% !important;
+				}
 
-			.contactform {
-				margin-top: 10%;
-			}
+				.contactform {
+					margin-top: 10%;
+				}
 
-			.input-contact {
-				border-radius: 30px !important;
-				font-size: 15px !important;
-				font-family: Barrlow Condesed;
+				.input-contact {
+					border-radius: 30px !important;
+					font-size: 15px !important;
+					font-family: Barrlow Condesed;
+					padding-left: 4% !important;
+					color: #0d0f39 !important;
+				}
 
-			}
+				.input-contact-mensage {
+					border-radius: 30px !important;
+					height: 150px;
+					font-size: 15px !important;
+					font-family: Barrlow Condesed;
+					padding-left: 4% !important;
+					color: #0d0f39 !important;
+				}
 
-			.input-contact-mensage {
-				border-radius: 30px !important;
-				height: 150px;
-				font-size: 15px !important;
-				font-family: Barrlow Condesed !important;
+				::-webkit-input-placeholder {
+					padding-left: 3%;
+					color: #0D0F39;
+				}
 
-			}
+				.btn-contact {
+					width: 150px !important;
+					height: 70px;
+					padding-left: 3% !important;
+					margin-top: 10%;
+					color: #fff !important;
+					font-size: 25px !important;
+					font-family: teko !important;
+				}
 
-			::-webkit-input-placeholder {
-				padding-left: 3%;
-			}
+				.btn-contact:hover {
+					color: white !important;
+					border-color: white !important;
+					background-color: #0D0F39 !important;
+				}
 
-			.btn-contact {
-				width: 100px !important;
-				padding-left: 35% !important;
-				color: #fff !important;
-				font-size: 25px !important;
-				font-family: teko !important;
-			}
+				.title-sign-up {
+					margin-left: 25%;
+				}
 
-			.btn-contact:hover {
-				color: white !important;
-				border-color: white !important;
-				background-color: #0D0F39 !important;
-			}
+				.title-contact {
+					margin-left: 30%;
+				}
 
-			.title-sign-up {
-				margin-left: 25%;
-			}
+				.button {
+					font-size: 1em;
+					padding: 10px;
+					color: #fff;
+					border: 2px #06D85F;
+					border-radius: 20px/50px;
+					text-decoration: none;
+					cursor: pointer;
+					transition: all 0.3s ease-out;
+				}
 
-			.title-contact {
-				margin-left: 30%;
-			}
+				.button:hover {
+					background: #06D85F;
+				}
 
-			.button {
-				font-size: 1em;
-				padding: 10px;
-				color: #fff;
-				border: 2px solid #06D85F;
-				border-radius: 20px/50px;
-				text-decoration: none;
-				cursor: pointer;
-				transition: all 0.3s ease-out;
-			}
-
-			.button:hover {
-				background: #06D85F;
-			}
-
-			.icon-contact {
-				position: absolute;
-				margin-top: 0.8%;
-				margin-left: 1%;
-				color: #0d0f39
-			}
-		</style>
+				.icon-contact {
+					position: absolute;
+					margin-top: 0.5%;
+					margin-left: 1%;
+					color: #0d0f39;
+					font-size: 20px;
+				}
+			</style>
 
 </html>
