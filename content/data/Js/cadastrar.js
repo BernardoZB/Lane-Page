@@ -1,5 +1,4 @@
 if (typeof MauticSDKLoaded == "undefined") {
-  console.log("passou");
   var MauticSDKLoaded = true;
   var head = document.getElementsByTagName("head")[0];
   var script = document.createElement("script");
@@ -14,11 +13,14 @@ if (typeof MauticSDKLoaded == "undefined") {
     submittingMessage: "Por favor, aguarde...",
   };
 }
-
-$("btn-contact").click(function () {
-  console.log(popup);
-  $(".pop-up").addClass("open");
-});
+function popup() {
+  var x = document.getElementById(
+    "mauticform_input_cursorobosinvestimentosleads_email"
+  ).value;
+  if (x.length > 0) {
+    $(".pop-up-sign-up").addClass("open");
+  }
+}
 
 $(".pop-up .close").click(function () {
   $(".pop-up").removeClass("open");
