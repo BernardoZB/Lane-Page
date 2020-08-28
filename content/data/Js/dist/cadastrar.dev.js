@@ -18,3 +18,11 @@ if (typeof MauticSDKLoaded == "undefined") {
     submittingMessage: "Por favor, aguarde..."
   };
 }
+
+$("btn-contact").click(function () {
+  console.log(popup);
+  $(".pop-up").addClass("open");
+});
+$(".pop-up .close").click(function () {
+  $(".pop-up").removeClass("open");
+});
