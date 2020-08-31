@@ -82,8 +82,12 @@ background-size: 40%;
 
 }*/
 
-.section_wrapper {
+/* .section_wrapper {
   min-height: 768px;
+} */
+
+.a-footer {
+  color: #fff !important;
 }
 
 .alinhamento-sign-up {
@@ -208,7 +212,11 @@ background-size: 40%;
   width: 30%;
   height: 30%;
   background-color: #0D0F39;
+  border: 2px solid #fff;
+
 }
+
+
 
 @media (min-width: 768px) {
   .pop-up {
@@ -370,4 +378,17 @@ background-size: 40%;
 
 .pop-up.open img {
   opacity: 1;
+}
+
+.blur-bgimage {
+  backdrop-filter: blur(5px);
+
+}
+
+.desfoque {
+  filter: blur(10px);
+}
+
+.img-footer {
+  margin-left: 25%;
 }

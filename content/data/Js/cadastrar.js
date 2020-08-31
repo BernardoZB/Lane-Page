@@ -14,14 +14,18 @@ if (typeof MauticSDKLoaded == "undefined") {
   };
 }
 function popup() {
-  var x = document.getElementById(
+  var input = document.getElementById(
     "mauticform_input_cursorobosinvestimentosleads_email"
   ).value;
-  if (x.length > 0) {
+  var button = document.getElementById(
+    "mauticform_input_cursorobosinvestimentosleads_submit"
+  );
+  if (input.length > 0) {
     $(".pop-up-sign-up").addClass("open");
   }
 }
 
-$(".pop-up .close").click(function () {
+$("body").click(function () {
   $(".pop-up").removeClass("open");
+  $("#Wrapper").removeClass("desfoque");
 });
